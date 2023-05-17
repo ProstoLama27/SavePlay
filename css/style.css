@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 390px;
+    background: #150226;
+}
+.standartBlock{
+    margin: 0 29px 0 29px;
+}
+.Ellipse1 {
+    position: absolute;
+    z-index: -1;
+    width: 347px;
+    height: 347px;
+    left: -91px;
+    top: 120px;
+    background: rgba(89, 47, 175, 0.5);
+    filter: blur(100px);
+}
+
+.Ellipse2 {
+    position: absolute;
+    z-index: -1;
+    width: 330px;
+    height: 330px;
+    left: 194px;
+    top: 434px;
+
+    background: rgba(118, 30, 180, 0.7);
+    filter: blur(100px);
+}
+/* -------------------------header---------------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logoImg{
+    margin: 25px;
+}
+
+.beurgeBtn{
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    margin-top: 27px;
+    margin-right: 33px;
+}
+/*  */
+.title__header{
+    margin-bottom:15px;
+}
+.title__text{
+    color: #B3A8C9;
+}
+.contactUsBtn {
+    cursor: pointer;
+    margin-top: 28px;
+    padding: 15px 18px 14px 18px;
+    border-radius: 13px;
+    border: none;
+    background: linear-gradient(263.57deg, #761EB4 0%, #3F17A6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* настройка текста в кнопке */
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.contactUsBtn:hover,
+.contactUsBtn:focus{
+    background: linear-gradient(263.57deg, #651a9b 0%, #3e189f 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.weHelp {
+    margin-top: 61px;
+    text-align: center;
+    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
+    border-radius: 13px;
+}
+.weHelp__title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+.weHelp__text{
+    padding: 0 14px 22px 12px;
+    color: #AA9EC0;
+}
+.demonstration__title {
+    margin-top: 55px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.demonstrationVideo{
+    width: 332px;
+    margin-top: 24px;
+}
+/*  */
