@@ -3,11 +3,8 @@
     padding: 0;
 }
 body{
-    max-width: 390px;
+   
     background: #150226;
-}
-.standartBlock{
-    margin: 0 29px 0 29px;
 }
 .Ellipse1 {
     position: absolute;
@@ -49,15 +46,20 @@ header{
     margin-right: 33px;
 }
 /*  */
+
 .title__header{
     margin-bottom:15px;
+    margin-left: 29px;
+    color: white;
 }
 .title__text{
+    margin-left: 29px;
     color: #B3A8C9;
 }
 .contactUsBtn {
     cursor: pointer;
     margin-top: 28px;
+    margin-left: 29px;
     padding: 15px 18px 14px 18px;
     border-radius: 13px;
     border: none;
@@ -77,6 +79,8 @@ header{
 }
 
 .weHelp {
+    width: 328px;
+    margin: 0 auto;
     margin-top: 61px;
     text-align: center;
     background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
@@ -96,7 +100,7 @@ header{
     color: #AA9EC0;
 }
 .demonstration__title {
-    margin-top: 55px;
+    margin-top: 24px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -106,6 +110,8 @@ header{
 }
 .demonstrationVideo{
     width: 332px;
+    margin: 0 auto;
+    display: block;
     margin-top: 24px;
 }
 /*  */
