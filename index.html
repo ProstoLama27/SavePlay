@@ -1,52 +1,139 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СейвПлей</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <script defer src="js/burgerMenu.js"></script>
 </head>
 <body>
-    <!-- <img src="img/Ellipse 1.png" alt="" class="Ellipse1">
-    <img src="img/Ellipse 2.png" alt="" class="Ellipse2"> -->
     <header class="headerMenu">
-        <img src="img/logo.png" alt="Логотип" class="logoImg">
-        <button class="burgeBtn" type="button">
-           <img src="img/burger.png" alt=""> 
-        </button>
+        <img src="img/logo.png" alt="">
+        <button class="bergerMenuBtn"><img src="img/burger.png" alt=""></button>
         <nav class="burgerNav">
-            <a href="" class="burgernav__link bergernav__FirstLink">Главная</a>
-            <a href="" class="burgernav__link">Для кого</a>
-            <a href="" class="burgernav__link">Дизайн</br> мышление</a>
-            <a href="" class="burgernav__link">Анкета</a>
-            <a href="" class="burgernav__link">Контакты</a>
+            <a href="#" class="burgernav__link bergernav__FirstLink">Главная</a>
+            <a href="#" class="burgernav__link">Для кого</a>
+            <a href="#" class="burgernav__link">Дизайн</br> мышление</a>
+            <a href="#" class="burgernav__link">Анкета</a>
+            <a href="#" class="burgernav__link">Контакты</a>
         </nav>
     </header>
-    <body>
-        <section>
-            <div class="title">
-                <h1 class="title__header">СейвПлей</h1> 
-                <p class="title__text">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей с эпилепсией и</br> дальтонизмом</p>
-                <button class="contactUsBtn" type="button">Связаться с нами</button>
+    <section class="section1">
+        <div class="block">
+            <h1 class="welcome__title">СейвПлей</h1>
+            <p class="welcome__text">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей с эпилепсией и</br> дальтонизмом</p>
+            <button class="contaactUs_Btn">Связаться с нами</button>
+        </div>
+        <div class="block weHelp">
+            <h2 class="weHelp__title">Мы помогаем</h2>
+            <p class="weHelp__text">людям с эпилепсией и дальтонизмом</br> комфортно просматривать видео и</br> фильмы</p>
+        </div>
+        <div class="block video">
+            <h2 class="video__title">Демонстрация</h2>
+        </div>
+        <video src="video/video1.mp4" class="video__example"></video>
+    </section>
+    <section class="section2">
+        <div class="block forWhom">
+            <h2 class="forWhom__title">Для кого</h2>
+            <ul class="forWhom__list">
+                <li class="forWhom__item">
+                    <img src="img/list-img.png" alt="" class="forWhom__img">
+                    <div class="forWhom__item-Description">
+                        <h3 class="description__title">4.6 млн</h3>
+                        <p class="description__text">людей с ОВЗ в России</p>
+                    </div>
+                </li>
+                <li class="forWhom__item">
+                    <img src="img/list-img.png" alt="" class="forWhom__img">
+                    <div class="forWhom__item-Description">
+                        <h3 class="description__title">4.6 млн</h3>
+                        <p class="description__text">людей с дальонизмом</p>
+                    </div>
+                </li>
+                <li class="forWhom__item">
+                    <img src="img/list-img.png" alt="" class="forWhom__img">
+                    <div class="forWhom__item-Description">
+                        <h3 class="description__title">4.6 млн</h3>
+                        <p class="description__text">людей с эпилепсией</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="block ourBenefits">
+            <h2 class="ourBenefits__title">Наши преймущества</h2>
+            <div class="block ourBenefits__description1">
+                <h3 class="ourBenefits__d__title">С эпилепсией</h3>
+                <ol class="ourBenefits__list">
+                    <li class="ourBenefits__item">Затемнение ярких моментов</li>
+                    <li class="ourBenefits__item">Размытие ярких моментов</li>
+                    <li class="ourBenefits__item">Безопасный режим</li>
+                </ol>
             </div>
-            <div class="standartBlock weHelp">
-                <h2 class="weHelp__title">Мы помогаем</h2>
-                <p class="weHelp__text">людям с эпилепсией и дальтонизмом комфортно просматривать видео и</br> фильмы</p>
+            <div class="block ourBenefits__description2">
+                <h3 class="ourBenefits__d__title">С дальтонизмом</h3>
+                <ol class="ourBenefits__list">
+                    <li class="ourBenefits__item">Настройка резкости </li>
+                    <li class="ourBenefits__item">Настройка яркости</li>
+                    <li class="ourBenefits__item"> Фильтры под разные типы дальтонизма</li>
+                </ol>
             </div>
-          
-            <div class="standartBlock demonstration">
-                <h2 class="demonstration__title">Демонстрация</h2>
-                <video src="video/video1.mp4" controls class="demonstrationVideo"></video>
-            </div>
-        </section>
-        <!-- <section>
-            <div class="standartBlock forWhom">
+        </div>
+    </section>
+    <section class="section3">
+        <div class="block studies">
+            <h2 class="studies__title"> Исследования</h2>
+            <ul class="studies__list">
+                <li class="studis__item">
+                    <img src="img/list-img.png" alt="">
+                    <p class="studies__text">Глубинное интервью с представителями ОВЗ</p>
+                </li>
+                <li class="studis__item">
+                    <img src="img/list-img.png" alt="">
+                    <p class="studies__text">Опрос людей с ОВЗ</p>
+                </li>
+                <li class="studis__item">
+                    <img src="img/list-img.png" alt="">
+                    <p class="studies__text">Тестирование продукта на людях с ОВЗ</p>
+                </li>
+            </ul>
+        </div>
+        <div class="block feedbackForm">
+            <h2 class="feedbackForm__title">Оставить заявку</h2>
+            <form action="">
 
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__block">
+            <div class="footer__description">
+                <img src="img/logo.png" alt="">
+                <div class="first-grid">
+                    <h3 class="footer__title">СейвПлей</h3>
+                    <p class="footer__text">Адаптивный функционал</br> для плеера</p>
+                </div>
             </div>
-        </section> -->
-    </body>
-    <footer></footer>
+            <div class="footer__description">
+                <img src="img/gmail__logo.png" alt="" class="footer__img">
+                <a href="" class="footer__link">Example@gmail.com</a>
+            </div>
+            <div class="footer__description">
+                <img src="img/telegram_logo.png" alt="">
+                <a href="" class="footer__link">@ElderlyTM</a>
+            </div>
+            <div class="footer__description ght">
+                <p  class="rights__text">All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
