@@ -40,63 +40,63 @@ body {
 
 /* маленькая картинка в списках */
 .list__img {
-    margin-left: 30px;
-    margin-right: 20px;
+    margin: 0 20px 0 30px;
     height: 35px;
 }
-.elips1{
+
+.elips1 {
     background: url(../img/Ellipse\ 1.png);
     position: absolute;
     z-index: -1;
-    width: 347px;
-height: 347px;
-left: -91px;
-top: 120px;
-background: rgba(89, 47, 175, 0.5);
-filter: blur(100px);
+    width: 165px;
+    height: 347px;
+    left: -91px;
+    top: 120px;
+    background: rgba(89, 47, 175, 0.5);
+    filter: blur(100px);
 }
-.elips2{
+
+.elips2 {
     background: url(../img/Ellipse\ 2.png);
     position: absolute;
     z-index: -1;
-width: 330px;
-height: 330px;
-left: 194px;
-top: 434px;
+    width: 165px;
+    height: 330px;
+    left: 194px;
+    top: 434px;
 
-background: rgba(118, 30, 180, 0.7);
-filter: blur(100px);
+    background: rgba(118, 30, 180, 0.7);
+    filter: blur(100px);
 }
-.elips3{
+
+.elips3 {
     background: url(../img/Ellipse\ 3.png);
     position: absolute;
     z-index: -1;
-width: 194px;
-height: 194px;
-left: 173px;
-top: 700px;
+    width: 194px;
+    height: 194px;
+    left: 173px;
+    top: 700px;
 
-background: rgba(47, 255, 243, 0.72);
-filter: blur(100px);
+    background: rgba(47, 255, 243, 0.72);
+    filter: blur(100px);
 }
-.elips2secondPosition{
-    width: 330px;
-    height: 330px;
+
+.elips2secondPosition {
     left: -101px;
     top: 1000px;
 }
-.elips2therdPosition{
-    width: 330px;
-height: 330px;
-left: 195px;
-top: 2000px;
+
+.elips2therdPosition {
+    left: 195px;
+    top: 2000px;
 }
-.elips3secondPosition{
-    width: 194px;
-height: 194px;
-left: -81px;
-top: 2400px;
+
+.elips3secondPosition {
+    left: -81px;
+    top: 2400px;
 }
+
 /* --------------Меню---------------------- */
 .headerMenu {
     display: flex;
@@ -207,7 +207,6 @@ top: 2400px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -216,13 +215,11 @@ top: 2400px;
 }
 
 .ourBenefits__description {
-    margin-top: 28px;
-    margin-bottom: 13px;
+    margin: 28px 0 13px 31px;
 }
 
 .ourBenefits__d__title {
-    padding-top: 17px;
-    padding-left: 31px;
+    padding: 17px 0 0 31px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -245,10 +242,10 @@ top: 2400px;
 .studis__item {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
-    margin-top: 38px;
+    margin: 38px 0 50px 0;
 }
-.studies__text{
+
+.studies__text {
     color: white;
 }
 
@@ -271,29 +268,34 @@ top: 2400px;
     border: 1px solid rgba(186, 67, 242, 0.67);
     border-radius: 13px;
 }
-#radio{
+
+#radio {
     width: 26px;
     height: 26px;
 }
+
 .input__radio {
     display: flex;
     flex-direction: row;
 }
-.form__link{
+
+.form__link {
     text-decoration: none;
-color: rgba(52, 158, 255, 1);
+    color: rgba(52, 158, 255, 1);
 }
+
 .form__link:hover,
-.form__link:focus{
+.form__link:focus {
     color: rgb(38, 119, 194);
 }
-.form__label{
+
+.form__label {
     margin-left: 14px;
-color: #C4C4C4;
+    color: #C4C4C4;
 }
-.formBtn{
-   margin-top: 27px;
-   margin-left: 76px;
+
+.formBtn {
+    margin: 27px 0 76px 0;
 }
 
 /* подвал */
@@ -304,8 +306,7 @@ footer {
 }
 
 .footer__description {
-    padding-top: 18px;
-    padding-left: 20px;
+    padding: 18px 0 0 20px;
     display: flex;
     flex-direction: row;
 }
@@ -317,15 +318,16 @@ footer {
 .footer__text {
     color: #937EB5;
 }
-.footer__link{
-    margin-top: 5px;
-    margin-left: 19px;
+
+.footer__link {
+    margin: 5px 0 0 19px;
     text-decoration: none;
-    color:#937EB5;
+    color: #937EB5;
 }
+
 .footer__link:hover,
-.footer__link:focus{
-    color:#6b588a;
+.footer__link:focus {
+    color: #6b588a;
 }
 
 .ght {
@@ -335,8 +337,7 @@ footer {
 
 .rights__text {
     color: rgba(91, 91, 91, 1);
-    margin-right: 18px;
-    margin-bottom: 26px;
+    margin: 0 18px 26px 0;
 }
 
 
