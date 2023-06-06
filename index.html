@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-<script defer src="js/burgerMenu.js"></script>
+    <script defer src="js/burgerMenu.js"></script>
 </head>
+
 <body>
     <img src="img/Ellipse 1.png" alt="элипс" class="elips1">
     <img src="img/Ellipse 2.png" alt="элипс" class="elips2">
@@ -20,60 +24,69 @@
     <img src="img/Ellipse 3.png" alt="элипс" class="elips3 elips3secondPosition">
     <header class="headerMenu">
         <img src="img/logo.png" alt="логотип">
-            <button class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
-            <nav class="burgerNav">
-                <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
-                <a href="#forWhom" class="burgernav__link">Для кого</a>
-                <a href="#studies" class="burgernav__link">Исследования</a>
-                <a href="#form" class="burgernav__link">Анкета</a>
-                <a href="#contacts" class="burgernav__link">Контакты</a>
-            </nav>
-            <!-- <nav class="headermenu">
-                <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
-                <a href="#forWhom" class="burgernav__link">Для кого</a>
-                <a href="#studies" class="burgernav__link">Исследования</a>
-                <a href="#form" class="burgernav__link">Анкета</a>
-                <a href="#contacts" class="burgernav__link">Контакты</a>
-            </nav> -->
+        <button class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
+        <nav class="burgerNav">
+            <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
+            <a href="#forWhom" class="burgernav__link">Для кого</a>
+            <a href="#studies" class="burgernav__link">Исследования</a>
+            <a href="#form" class="burgernav__link">Анкета</a>
+            <a href="#contacts" class="burgernav__link">Контакты</a>
+        </nav>
+        <nav class="desctop__menu">
+            <ul class="desctop__menuList">
+                <li class="desctop__items"><a href="#main" class="desctop__link">Главная</a></li>
+                <li class="desctop__items"><a href="#forWhom" class="desctop__link">Для кого</a></li>
+                <li class="desctop__items"><a href="#studies" class="desctop__link">Исследования</a></li>
+                <li class="desctop__items"><a href="#form" class="desctop__link">Анкета</a></li>
+                <li class="desctop__items"><a href="#contacts" class="desctop__link">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="">
         <div class=" welcome__block" id="main">
-            <img src="img/name.png" alt="название">
-            <p class="text">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей с эпилепсией и</br> дальтонизмом</p>
-            <button class="contactUs_Btn">Связаться с нами</button>
-            <!-- <img src="img/fullScreanLogo.png" alt="" class="fullscrean__logo"> -->
+            <div class="text__block">
+                <img src="img/Group 4.png" alt="название">
+                <p class="text ppp">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей
+                    с эпилепсией и</br> дальтонизмом</p>
+                <button class="contactUs_Btn">Связаться с нами</button>
+            </div>
+            <div class="img__block">
+                <img src="img/fullScreanLogo.png" alt="" class="fullscrean__logo">
+            </div>
+
         </div>
         <div class="block weHelp__block">
             <h2 class="title">Мы помогаем</h2>
-            <p class="text weHelp__text">людям с эпилепсией и дальтонизмом</br> комфортно просматривать видео и</br> фильмы</p>
+            <p class="text weHelp__text">людям с эпилепсией и дальтонизмом</br> комфортно просматривать видео и</br>
+                фильмы</p>
         </div>
         <div class="">
             <h2 class="title">Демонстрация</h2>
         </div>
         <video src="video/video1.mp4" class="video__example"></video>
     </section>
-    <section >
+    <section>
         <div class="block forwhom__block" id="forWhom">
             <div class="">
                 <h2 class="title">Для кого</h2>
-                <ul class="forwhom__list">
+                <ul class="forwhom__list list">
                     <li class="forwhom__item">
                         <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="item__block">
+                        <div class="list__text">
                             <h3 class="forwhom__title">4.6 млн</h3>
                             <p class="text">людей с ОВЗ в России</p>
                         </div>
                     </li>
                     <li class="forwhom__item">
                         <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="">
+                        <div class="list__text">
                             <h3 class="forwhom__title">4.6 млн</h3>
                             <p class="text">людей с дальонизмом</p>
                         </div>
                     </li>
                     <li class="forwhom__item">
                         <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="">
+                        <div class="list__text">
                             <h3 class="forwhom__title">4.6 млн</h3>
                             <p class="text">людей с эпилепсией</p>
                         </div>
@@ -84,82 +97,86 @@
         <div class="ourBenefits__block">
             <h2 class="title">Наши преимущества</h2>
             <div class="block ourBenefits__description">
-                <h3 class="ourBenefits__d__title ">С эпилепсией</h3>
-                <ol class="ourBenefits__list">
-                    <li class="text">Затемнение ярких моментов</li>
-                    <li class="text">Размытие ярких моментов</li>
-                    <li class="text">Безопасный режим</li>
-                </ol>
+                <div class="discription__block">
+                    <h3 class="ourBenefits__d__title ">С эпилепсией</h3>
+                    <ol class="ourBenefits__list">
+                        <li class="text">Затемнение ярких моментов</li>
+                        <li class="text">Размытие ярких моментов</li>
+                        <li class="text">Безопасный режим</li>
+                    </ol>
+                </div>
+
             </div>
             <div class="block ourBenefits__description1">
-                <h3 class="ourBenefits__d__title ">С дальтонизмом</h3>
-                <ol class="ourBenefits__list">
-                    <li class="text">Настройка резкости </li>
-                    <li class="text">Настройка яркости</li>
-                    <li class="text"> Фильтры под разные типы дальтонизма</li>
-                </ol>
+                <div class="discription__block">
+                    <h3 class="ourBenefits__d__title ">С дальтонизмом</h3>
+                    <ol class="ourBenefits__list">
+                        <li class="text">Настройка резкости </li>
+                        <li class="text">Настройка яркости</li>
+                        <li class="text"> Фильтры под разные типы дальтонизма</li>
+                    </ol>
+                </div>
+
             </div>
         </div>
     </section>
     <section class="section3">
         <div class="block studies__block" id="studies">
             <h2 class="title"> Исследования</h2>
-            <ul class="studies__list">
+            <ul class="studies__list list">
                 <li class="studis__item">
                     <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text studies__text">Глубинное интервью с представителями ОВЗ</p>
+                    <p class="text list__text">Глубинное интервью</br> с представителями ОВЗ</p>
                 </li>
                 <li class="studis__item">
                     <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text studies__text">Опрос людей с ОВЗ</p>
+                    <p class="text list__text">Опрос людей с ОВЗ</p>
                 </li>
                 <li class="studis__item">
                     <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text studies__text">Тестирование продукта</br> на людях с ОВЗ</p>
+                    <p class="text list__text">Тестирование продукта</br> на людях с ОВЗ</p>
                 </li>
             </ul>
         </div>
         <div class="block form__block" id="form">
             <h2 class="title">Оставить заявку</h2>
-            <form action="" class="feedbackFormBlock">
-                <div class="feedbackForm__input">
-                    <input type="text" class="input__text">
+            <form action="" class="form__inputs">
+                <div class="input">
+                    <input type="text" class="form__input">
                 </div>
-                <div class="feedbackForm__input">
-                    <input type="number" class="input__text">
+                <div class="input">
+                    <input type="tel" class="form__input">
                 </div>
-                <div class="feedbackForm__input">
-                    <input type="text" class="input__text">
+                <div class="input">
+                    <input type="text" class="form__input">
                 </div>
-                <div class="feedbackForm__input input__radio">
+                <div class="input input__radio">
                     <input id="radio" type="radio">
-                    <p class="form__label text">Я согласен с <a href="#" class="form__link"> правилами</br> пользования</a></p>
+                    <p class="form__label text">Я согласен с <a href="#" class="form__link"> правилами</br>
+                            пользования</a></p>
                 </div>
-                   <button class="contactUs_Btn formBtn">Связаться с нами</button>
+                <button class="contactUs_Btn form__btn">Связаться с нами</button>
             </form>
         </div>
     </section>
     <footer class="footer" id="contacts">
         <div class="footer__block">
             <div class="footer__description">
-                <img src="img/logo.png" alt="логотип" class="footerLogo">
-                <div class="first-grid">
-                    <h3 class="footer__title">СейвПлей</h3>
-                    <p class="footer__text">Адаптивный функционал</br> для плеера</p>
-                </div>
+                <img src="img/footerImg.png" alt="" class="footer__welcomImg">
             </div>
             <div class="footer__description">
                 <img src="img/gmail__logo.png" alt="почта" class="footer__img">
                 <a href="" class="text footer__link">Example@gmail.com</a>
             </div>
             <div class="footer__description">
-                <img src="img/telegram_logo.png" alt="телеграмм" class="footer__img"> 
+                <img src="img/telegram_logo.png" alt="телеграмм" class="footer__img">
                 <a href="" class=" text footer__link">@ElderlyTM</a>
             </div>
             <div class="footer__description ght">
-                <p  class="rights__text">All rights reserved.</p>
+                <p class="rights__text">All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
