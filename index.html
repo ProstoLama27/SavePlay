@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description">
+    <title>SavePlay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/videoPlay.js"></script>
     <script defer src="js/burgerMenu.js"></script>
+    
+    
 </head>
 
 <body>
-    <img src="img/Ellipse 1.png" alt="элипс" class="elips1">
-    <img src="img/Ellipse 2.png" alt="элипс" class="elips2">
-    <img src="img/Ellipse 3.png" alt="элипс" class="elips3">
-    <img src="img/Ellipse 2.png" alt="элипс" class="elips2 elips2secondPosition">
-    <img src="img/Ellipse 2.png" alt="элипс" class="elips2 elips2therdPosition">
-    <img src="img/Ellipse 3.png" alt="элипс" class="elips3 elips3secondPosition">
+    <img src="img/Ellipse1.png" alt="элипс" class="elips1">
+    <img src="img/Ellipse2.png" alt="элипс" class="elips2">
+    <img src="img/Ellipse3.png" alt="элипс" class="elips3">
+    <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2secondPosition">
+    <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2therdPosition">
+    <img src="img/Ellipse3.png" alt="элипс" class="elips3 elips3secondPosition">
     <header class="headerMenu">
         <img src="img/logo.png" alt="логотип">
-        <button class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
+        <button type="button" class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
         <nav class="burgerNav">
             <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
             <a href="#forWhom" class="burgernav__link">Для кого</a>
@@ -42,13 +47,13 @@
             </ul>
         </nav>
     </header>
-    <section class="">
+    <section class="section-1">
         <div class=" welcome__block" id="main">
             <div class="">
-                <img src="img/Group 4.png" alt="название" class="welcom__img">
+                <img src="img/name.png" alt="название" class="welcom__img">
                 <p class="text ">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей
                     с эпилепсией и</br> дальтонизмом</p>
-                <button class="contactUs_Btn">Связаться с нами</button>
+                <button id="contactBtn" type="button" class="contactUs_Btn">Связаться с нами</button>
             </div>
             <div class="img__block">
                 <img src="img/fullScreanLogo.png" alt="" class="fullscrean__logo">
@@ -56,14 +61,14 @@
 
         </div>
         <div class="block weHelp__block">
-            <h2 class="title">Мы помогаем</h2>
+            <h2 class="title weHelp__title">Мы помогаем</h2>
             <p class="text weHelp__text">людям с эпилепсией и дальтонизмом</br> комфортно просматривать видео и</br>
                 фильмы</p>
         </div>
-        <div class="">
+        <div class="demonstration__block">
             <h2 class="title">Демонстрация</h2>
         </div>
-        <video src="video/video1.mp4" class="video__example"></video>
+        <video src="video/video1.mp4" controls id="video" class="video__example"></video>
     </section>
     <section>
         <div class="block forwhom__block" id="forWhom">
@@ -139,23 +144,23 @@
             </ul>
         </div>
         <div class="block form__block" id="form">
-            <h2 class="title">Оставить заявку</h2>
-            <form action="" class="form__inputs">
+            <h2 class="title form_t">Оставить заявку</h2>
+            <form action="#" class="form__inputs">
                 <div class="input">
-                    <input type="text" class="form__input">
+                    <input id="fio" type="text" value="  ФИО" class="form__input form__inputText">
                 </div>
                 <div class="input">
-                    <input type="tel" class="form__input">
+                    <input id="tel" type="tel" value="  +7" class="form__input form__inputText">
                 </div>
                 <div class="input">
-                    <input type="text" class="form__input">
+                    <input type="text" value="  Какую компанию вы представляете" class="form__input form__inputText">
                 </div>
                 <div class="input input__radio">
                     <input id="radio" type="radio">
-                    <p class="form__label text">Я согласен с <a href="#" class="form__link"> правилами</br>
+                    <p class="form__label text">Я согласен с <a href="#" class="form__link "> правилами</br>
                             пользования</a></p>
                 </div>
-                <button class="contactUs_Btn form__btn">Связаться с нами</button>
+                <button type="button" class="contactUs_Btn form__btn">Связаться с нами</button>
             </form>
         </div>
     </section>
@@ -166,11 +171,11 @@
             </div>
             <div class="footer__description">
                 <img src="img/gmail__logo.png" alt="почта" class="footer__img">
-                <a href="" class="text footer__link">Example@gmail.com</a>
+                <a href="mailto:save.play.team@gmail.com" class="text footer__link">save.play.team@gmail.com</a>
             </div>
             <div class="footer__description">
                 <img src="img/telegram_logo.png" alt="телеграмм" class="footer__img">
-                <a href="" class=" text footer__link">@ElderlyTM</a>
+                <a href="https://web.telegram.org/k/#@ElderlyTM" class=" text footer__link">@ElderlyTM</a>
             </div>
             <div class="footer__description ght">
                 <p class="rights__text">All rights reserved.</p>

@@ -17,7 +17,7 @@ body {
 /* Все заголовки */
 .title {
     /* обратить внимание на отступ */
-    margin-bottom: 37px;
+    /* margin-bottom: 37px; */
     padding-top: 24px;
     text-align: center;
     font-family: 'Raleway';
@@ -169,11 +169,14 @@ body {
     margin: 0 auto;
     padding-top: 23px;
 }
-.welcom__img{
+
+.welcom__img {
     width: 156px;
     height: 28px;
 }
+
 .contactUs_Btn {
+    cursor: pointer;
     margin-top: 28px;
     padding: 15px 18px;
     background: linear-gradient(263.57deg, #761EB4 0%, #3F17A6 100%);
@@ -279,7 +282,7 @@ margin-left: 30px;
 }
 
 .input {
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .form__input {
@@ -289,7 +292,22 @@ margin-left: 30px;
     border: 1px solid rgba(186, 67, 242, 0.67);
     border-radius: 13px;
 }
-
+.form__inputText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+.form__link{
+    text-decoration: none;
+    color: rgba(52, 158, 255, 1);
+}
+.form__link:hover,
+.form__link:focus{
+    color: rgb(39, 114, 184);
+}
 .input__radio {
     display: flex;
     flex-direction: row;
@@ -305,16 +323,19 @@ margin-left: 30px;
     margin-left: 40px;
 }
 
+
 /* подвал */
 footer {
     margin-top: 100px;
     background-color: rgba(11, 1, 28, 1);
 
 }
-.footer__welcomImg{
+
+.footer__welcomImg {
     width: 200px;
     height: 68px;
 }
+
 .footer__description {
     padding: 18px 0 0 20px;
     display: flex;
@@ -391,9 +412,11 @@ footer {
     border: 1px solid rgba(194, 117, 255, 0.54);
     border-radius: 13px;
 }
-.fullscrean__logo{
+
+.fullscrean__logo {
     display: none;
 }
+
 @media(min-width:768px) {
     .bergerMenuBtn {
         display: none;
@@ -420,10 +443,14 @@ footer {
     /* текст */
     .title {
         /* разобраться с этим отсупом 101, едет блок: мы помогаем */
-        margin: 64px 0 101px 0;
+        margin: 64px 0 50px 0;
         /* обратить внимание на отступ */
         font-size: 24px;
         line-height: 35px;
+    }
+
+    .weHelp__title {
+        margin-bottom: 25px;
     }
 
     .text {
@@ -478,7 +505,7 @@ footer {
     /* блок мы помогаем */
     .weHelp__block {
         /* надо бдует поменять */
-        height: 267px;
+        height: 180px;
     }
 
     /* блоки со списками */
@@ -561,13 +588,9 @@ footer {
     .footer__block {
         height: 500px;
     }
+
+
     
-
-    footer {
-        margin-top: 100px;
-        background-color: rgba(11, 1, 28, 1);
-
-    }
 
     .footer__description {
         padding: 18px 0 44px 73px;
@@ -599,11 +622,6 @@ footer {
         color: #6b588a;
     }
 
-    .ght {
-        display: flex;
-        justify-content: end;
-    }
-
     .rights__text {
         font-size: 20px;
         line-height: 27px;
@@ -624,7 +642,8 @@ footer {
         line-height: 17px;
     }
 }
-@media(min-width:1200px){
+
+@media(min-width:1200px) {
     /* меню */
     /* .desctop__menu {
         width: 600px;
@@ -645,10 +664,14 @@ footer {
     /* текст */
     .title {
         /* разобраться с этим отсупом 101, едет блок: мы помогаем */
-        margin: 64px 0 101px 0;
+        margin: 64px 0 80px 0;
         /* обратить внимание на отступ */
         font-size: 64px;
         line-height: 75px;
+    }
+
+    .weHelp__title {
+        margin-bottom: 25px;
     }
 
     .text {
@@ -670,10 +693,11 @@ footer {
     }
 
     /* картинки */
-    .welcom__img{
+    .welcom__img {
         width: 518px;
         height: 94px;
     }
+
     .list__img {
         width: 99px;
         height: 103px;
@@ -803,7 +827,7 @@ footer {
 
 
 
-     footer {
+    footer {
         margin-top: 100px;
         background-color: rgba(11, 1, 28, 1);
 
@@ -854,13 +878,15 @@ footer {
         width: 106px;
         height: 106px;
     }
-     .contactUs_Btn {
+
+    .contactUs_Btn {
         width: 392px;
         height: 109px;
         padding: 33px 30px;
         font-size: 36px;
         line-height: 42px;
     }
+
     .contactUs_Btn {
         width: 392px;
         height: 109px;
@@ -869,7 +895,9 @@ footer {
         line-height: 42px;
     }
 }
+
 @media(min-width:1438px) {
+
     /* текст */
     .title {
         /* разобраться с этим отсупом 101, едет блок: мы помогаем */
@@ -877,6 +905,10 @@ footer {
         /* обратить внимание на отступ */
         font-size: 64px;
         line-height: 75px;
+    }
+
+    .weHelp__title {
+        margin-bottom: 40px;
     }
 
     .text {
@@ -906,7 +938,11 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 68px;
+        margin-top: 168px;
+    }
+
+    .demonstration__block {
+        margin-top: 139px;
     }
 
     .list {
@@ -922,8 +958,13 @@ footer {
         height: 352px;
     }
 
+    .ourBenefits__block {
+        margin-top: 154px;
+    }
+
     .forwhom__block,
     .studies__block {
+        margin-top: 122px;
         height: 1003px;
     }
 
@@ -933,6 +974,7 @@ footer {
 
     .ourBenefits__description {
         height: 386px;
+        margin-bottom: 35px;
     }
 
     .ourBenefits__description1 {
@@ -941,6 +983,7 @@ footer {
 
     .form__block {
         height: 1331px;
+        margin-top: 173px;
     }
 
     .footer__block {
@@ -979,7 +1022,6 @@ footer {
     }
 
     /* настройка формы */
-
 
     .form__inputs {
         width: 757px;
