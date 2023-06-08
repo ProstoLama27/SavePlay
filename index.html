@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="img/favicon.png">
+    <!-- подключить Inter -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/videoPlay.js"></script>
+    <!-- <script src="js/videoPlay.js"></script> -->
     <script defer src="js/burgerMenu.js"></script>
     <script defer src="js/formSend.js"></script>
     
@@ -22,16 +23,10 @@
 </head>
 
 <body>
-    <img src="img/Ellipse1.png" alt="элипс" class="elips1">
-    <img src="img/Ellipse2.png" alt="элипс" class="elips2">
-    <img src="img/Ellipse3.png" alt="элипс" class="elips3">
-    <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2secondPosition">
-    <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2therdPosition">
-    <img src="img/Ellipse3.png" alt="элипс" class="elips3 elips3secondPosition">
     <div class="overlay"></div>
     <header id="header" class="headerMenu">
-        <a href="#main"><img src="img/logo.png" alt="логотип"></a>
-        <button type="button" class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
+        <a href="#main"><img src="img/logo_min.svg" alt="логотип"></a>
+        <button type="button" class="bergerMenuBtn"><img src="img/burgerMenu.svg" alt="бургер меню"></button>
         <nav class="burgerNav">
             <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
             <a href="#forWhom" class="burgernav__link">Для кого</a>
@@ -49,142 +44,145 @@
             </ul>
         </nav>
     </header>
-    <section class="section-1">
-        <div class=" welcome__block" id="main">
-            <div class="">
-                <img src="img/name.png" alt="название" class="welcom__img">
-                <p class="text ">Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей
-                    с эпилепсией и</br> дальтонизмом</p>
-                <button id="contactBtn" type="button" class="contactUs_Btn">Связаться с нами</button>
-            </div>
-            <div class="img__block">
-                <img src="img/fullScreanLogo.png" alt="" class="fullscrean__logo">
-            </div>
-
-        </div>
-        <div class="block weHelp__block">
-            <h2 class="title weHelp__title">Мы помогаем</h2>
-            <p class="text weHelp__text">людям с эпилепсией и дальтонизмом</br> комфортно просматривать видео и</br>
-                фильмы</p>
-        </div>
-        <div class="demonstration__block">
-            <h2 class="title">Демонстрация</h2>
-        </div>
-        <video src="video/video1.mp4" controls id="video" class="video__example"></video>
-    </section>
-    <section>
-        <div class="block forwhom__block" id="forWhom">
-            <div class="">
-                <h2 class="title">Для кого</h2>
-                <ul class="forwhom__list list">
-                    <li class="forwhom__item">
-                        <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="list__text">
-                            <h3 class="forwhom__title">4.6 млн</h3>
-                            <p class="text">людей с ОВЗ в России</p>
-                        </div>
-                    </li>
-                    <li class="forwhom__item">
-                        <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="list__text">
-                            <h3 class="forwhom__title">4.6 млн</h3>
-                            <p class="text">людей с дальонизмом</p>
-                        </div>
-                    </li>
-                    <li class="forwhom__item">
-                        <img src="img/list-img.png" alt="картинка" class="list__img">
-                        <div class="list__text">
-                            <h3 class="forwhom__title">4.6 млн</h3>
-                            <p class="text">людей с эпилепсией</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="ourBenefits__block">
-            <h2 class="title">Наши преимущества</h2>
-            <div class="block ourBenefits__description">
-                <div class="discription__block">
-                    <h3 class="ourBenefits__d__title ">С эпилепсией</h3>
-                    <ol class="ourBenefits__list">
-                        <li class="text">Затемнение ярких моментов</li>
-                        <li class="text">Размытие ярких моментов</li>
-                        <li class="text">Безопасный режим</li>
-                    </ol>
-                </div>
-
-            </div>
-            <div class="block ourBenefits__description1">
-                <div class="discription__block">
-                    <h3 class="ourBenefits__d__title ">С дальтонизмом</h3>
-                    <ol class="ourBenefits__list">
-                        <li class="text">Настройка резкости </li>
-                        <li class="text">Настройка яркости</li>
-                        <li class="text"> Фильтры под разные типы дальтонизма</li>
-                    </ol>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="section3">
-        <div class="block studies__block" id="studies">
-            <h2 class="title"> Исследования</h2>
-            <ul class="studies__list list">
-                <li class="studis__item">
-                    <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text list__text">Глубинное интервью</br> с представителями ОВЗ</p>
+   <section>
+    <div class="welcom__block">
+        <img src="img/title.svg" alt="СейвПлей" class="welcom__block-img">
+        <p class="welcom__block-text">
+            Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей с эпилепсией и</br> дальтонизмом
+        </p>
+        <button class="contactUs__btn">Связаться с нами</button>
+    </div>
+    <div class="mobile__block weHelp__block">
+        <h2 class="title weHelp__block-title"> Мы помогаем</h2>
+        <p class="text weHelp__block-text">
+            людям с эпилепсией и дальтонизмом комфортно просматривать видео и фильмы
+        </p>
+    </div>
+    <div class="demonstration__block">
+        <h2 class="title">Демонстрация</h2>
+        <video src="video/video1.mp4" class="video"></video>
+    </div>
+   </section>
+   <section>
+    <div class="grid__block">
+        <div class="list__block">
+            <h2 class="title list__block-title">Для кого</h2>
+            <ul class="list__block-list">
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <div class="list__description">
+                        <h3 class="list__description-title">4.6 млн</h3>
+                        <p class="text">людей с эпилепсией</p>
+                    </div>
                 </li>
-                <li class="studis__item">
-                    <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text list__text">Опрос людей с ОВЗ</p>
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <div class="list__description">
+                        <h3 class="list__description-title">4.6 млн</h3>
+                        <p class="text">людей с ОВЗ в России</p>
+                    </div>
                 </li>
-                <li class="studis__item">
-                    <img src="img/list-img.png" alt="картинка" class="list__img">
-                    <p class="text list__text">Тестирование продукта</br> на людях с ОВЗ</p>
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <div class="list__description">
+                        <h3 class="list__description-title">4.6 млн</h3>
+                        <p class="text">людей с дальонизмом</p>
+                    </div>
                 </li>
             </ul>
         </div>
-        <div class="block form__block" id="form">
-            <h2 class="title form_t">Оставить заявку</h2>
-            <form action="#" class="form__inputs">
-                <div class="input">
-                    <input id="fio" type="text" placeholder="ФИО" class="form__input form__inputText">
-                </div>
-                <div class="input">
-                    <input id="tel" type="tel" placeholder="+7..." class="form__input form__inputText">
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Какую компанию вы представляете" class="form__input form__inputText">
-                </div>
-                <div class="input input__radio">
-                    <input id="radio" type="radio">
-                    <p class="form__label text">Я согласен с <a href="#" class="form__link "> правилами</br>
-                            пользования</a></p>
-                </div>
-                <button type="button" class="contactUs_Btn form__btn">Связаться с нами</button>
-            </form>
+        <div class="list__block">
+            <h2 class="title list__block-title">Исследования</h2>
+            <ul class="list__block-list">
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <p class="list__description-text">Глубинное интервью 
+                        с представителями ОВЗ</p>
+                </li>
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <p class="list__description-text">Опрос людей с ОВЗ</p>
+                </li>
+                <li class="list__block-item">
+                    <img src="img/list_img.svg" alt="фавикон" class="list__img">
+                    <p class="list__description-text">Тестирование продукта на людях с ОВЗ</p>
+                </li>
+            </ul>
         </div>
-    </section>
-    <footer class="footer" id="contacts">
-        <div class="footer__block">
-            <div class="footer__description">
-                <img src="img/footerImg.png" alt="" class="footer__welcomImg">
+    </div>
+    <div class="ourBenefits">
+        <h2 class="title oueBenefits__title">Наши преимущества</h2>
+        <div class="grid__block">
+            <div class="benefit__block">
+                <div class="benefit__block-desc">
+                    <h3 class="benefit__block-title">С эпилепсией</h3>
+                    <ol class="benefit__block-list">
+                        <li class="benefit__block-item">Затемнение ярких моментов</li>
+                        <li class="benefit__block-item">Размытие ярких моментов</li>
+                        <li class="benefit__block-item">Безопасный режим</li>
+                    </ol>
+                </div>
+               
             </div>
-            <div class="footer__description">
-                <img src="img/gmail__logo.png" alt="почта" class="footer__img">
-                <a href="mailto:save.play.team@gmail.com" class="text footer__link">save.play.team@gmail.com</a>
-            </div>
-            <div class="footer__description">
-                <img src="img/telegram_logo.png" alt="телеграмм" class="footer__img">
-                <a href="https://web.telegram.org/k/#@ElderlyTM" class=" text footer__link">@ElderlyTM</a>
-            </div>
-            <div class="footer__description ght">
-                <p class="rights__text">All rights reserved.</p>
+            <div class="benefit__block">
+                <div class="benefit__block-desc">
+                    <h3 class="benefit__block-title">С дальтонизмом</h3>
+                <ol class="benefit__block-list">
+                    <li class="benefit__block-item">Настройка резкости</li>
+                    <li class="benefit__block-item">Настройка яркости</li>
+                    <li class="benefit__block-item">Фильтры под разные типы дальтонизма</li>
+                </ol>
+                </div>
             </div>
         </div>
-    </footer>
-    
+    </div>
+    <div class="form">
+        <h2 class="title form_title">Оставить заявку</h2>
+        <form action="" class="form__block">
+            <div>
+                <input type="text" placeholder="ФИО" class="form__input">
+            </div>
+            <div>
+                <input type="tel" placeholder="+7..." class="form__input">
+            </div>
+            <div>
+                <input type="text" placeholder="какую компанию вы представляете" class="form__input">
+            </div>
+            <div>
+                <div class="form__radioInput">
+                    <input type="radio" class="form__inputRadio">
+                    <p class="form__input-text">Я согласен с <a href="#" class="form__input-link">правилами</br>
+                        пользования</a></p>
+                </div>
+            </div>
+            <div>
+                <button class="contactUs__btn form__btn">Связаться с нами</button>
+            </div>
+        </form>
+    </div>
+   </section>
+   <footer class="footer__block">
+    <div class="footer__grid">
+        <div>
+            <img src="img/footer_img.svg" alt="" class="footer__img">
+        </div>
+        <div>
+            <div class="sosial">
+                <img src="img/gmail_img.svg" alt="почта" class="sosial__img">
+                <a href="#" class="sosial__link">save.play.team@gmail.com</a>
+            </div>
+        </div>
+        <div>
+            <div class="sosial">
+                <img src="img/telegram_img.svg" alt="телеграмм" class="sosial__img">
+                <a href="#" class="sosial__link">@ElderlyTM</a>
+            </div>
+        </div>
+        <div class="signed">
+            <p class="footer__Signed">All rights reserved.</p>
+        </div>
+    </div>
+   </footer>
 </body>
 
 </html>

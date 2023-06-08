@@ -5,23 +5,12 @@
 
 body {
     background-color: #150226;
+    font-family: 'Raleway', sans-serif;
 }
 
-.block {
-    width: 328px;
-    margin: 0 auto;
-    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
-    border-radius: 13px;
-}
-
-/* Все заголовки */
 .title {
-    /* обратить внимание на отступ */
-    /* margin-bottom: 37px; */
-    padding-top: 24px;
     text-align: center;
-    font-family: 'Raleway';
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -29,82 +18,28 @@ body {
     color: #FFFFFF;
 }
 
-/* весь фиолетовый текст */
 .text {
-    font-family: 'Raleway';
-    font-style: "semi Bold";
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 159.4%;
+    line-height: 19px;
+    text-align: center;
+
     color: #AA9EC0;
 }
 
-/* настройка списков */
-.list {
-    margin-left: 30px;
+.mobile__block {
+    width: 328px;
+    margin: 0 auto;
+    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
+    border-radius: 13px;
 }
 
-.list__text {
-    margin-left: 20px;
-    color: white;
-}
-
-.list__img {
-    width: 34px;
-    height: 35px;
-}
-
-.elips1 {
-    background: url(../img/Ellipse\ 1.png);
-    position: absolute;
-    z-index: -1;
-    width: 165px;
-    height: 347px;
-    left: -91px;
-    top: 120px;
-    background: rgba(89, 47, 175, 0.5);
-    filter: blur(100px);
-}
-
-.elips2 {
-    background: url(../img/Ellipse\ 2.png);
-    position: absolute;
-    z-index: -1;
-    width: 165px;
-    height: 330px;
-    left: 194px;
-    top: 434px;
-
-    background: rgba(118, 30, 180, 0.7);
-    filter: blur(100px);
-}
-
-.elips3 {
-    background: url(../img/Ellipse\ 3.png);
-    position: absolute;
-    z-index: -1;
-    width: 194px;
-    height: 194px;
-    left: 173px;
-    top: 700px;
-
-    background: rgba(47, 255, 243, 0.72);
-    filter: blur(100px);
-}
-
-.elips2secondPosition {
-    left: -101px;
-    top: 1000px;
-}
-
-.elips2therdPosition {
-    left: 195px;
-    top: 2000px;
-}
-
-.elips3secondPosition {
-    left: -81px;
-    top: 2400px;
+.grid__block {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+    gap: 15px;
 }
 
 /* --------------Меню---------------------- */
@@ -115,7 +50,8 @@ body {
     position: relative;
     z-index: 2;
 }
-.headerMenu--fixed{
+
+.headerMenu--fixed {
     width: 100%;
     position: fixed;
     top: 0;
@@ -143,26 +79,27 @@ body {
     margin-top: 65px;
     background-color: #5C3D90;
     border-radius: 45px 0px 0px 45px;
-   
+
 }
+
 .overlay {
     position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2900px;
-  backdrop-filter: blur(8px);
-  z-index: 1;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  }
-  
-  .overlay.active {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2800px;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.active {
     opacity: 1;
-    
+
     pointer-events: auto;
-  }
+}
 
 .burgerNav--visible {
     opacity: 1;
@@ -189,27 +126,34 @@ body {
     color: rgb(214, 210, 210);
 }
 
-/*------------------Первая секция --------------------------- */
-.welcome__block {
-    width: 328px;
-    margin: 0 auto;
-    padding-top: 23px;
+/* ----------------------Секция-1---------------------------- */
+.welcom__block {
+    margin: 23px 0 0 29px;
 }
 
-.welcom__img {
+.welcom__block-img {
     width: 156px;
     height: 28px;
+    margin-bottom: 15px;
 }
 
-.contactUs_Btn {
-    cursor: pointer;
-    margin-top: 28px;
+.welcom__block-text {
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #B3A8C9;
+}
+
+.contactUs__btn {
     padding: 15px 18px;
+    border: none;
     background: linear-gradient(263.57deg, #761EB4 0%, #3F17A6 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
 
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -217,62 +161,112 @@ body {
     color: #FFFFFF;
 }
 
-.weHelp__block {
-    margin-top: 61px;
-    height: 167px;
-}
-
-.weHelp__text {
-    margin-top: 16px;
-    text-align: center;
-}
-
-.video__example {
-    margin-top: 19px;
-    width: 100%;
-}
-
-/* -------------------секция 2----------------------------- */
-.forwhom__block {
-    margin-top: 67px;
-    height: 345px;
-}
-
-/* .forwhom__list{
-margin-left: 30px;
+/* .contactUs__btn:hover{
+    background: linear-gradient(263.57deg, #A92FFF 0%, #743EFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } */
-.forwhom__item {
+
+.weHelp__block {
+    height: 167px;
+    margin-top: 61px;
+}
+
+.weHelp__block-title {
+    padding-top: 24px;
+}
+
+.weHelp__block-text {
+    margin-top: 16px;
+}
+
+.demonstration__block {
+    margin-top: 55px;
+}
+
+.video {
+    margin: 19px 0 67px 0;
+    width: 100%;
+    height: 210px;
+}
+
+/* ----------------------Секция-2---------------------------- */
+.list__block {
+    width: 328px;
+    height: 345px;
+    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
+    border-radius: 13px;
+}
+
+.list__block-title {
+    padding-top: 20px;
+}
+
+.list__block-list {
+    margin: 37px;
+    justify-content: center;
+    list-style: none;
+}
+
+.list__block-item {
+    margin-bottom: 52px;
     display: flex;
     flex-direction: row;
-    margin-top: 33px;
 }
 
-.forwhom__title {
+.list__img {
+    width: 34px;
+    height: 34px;
+}
+
+.list__description {
+    margin-left: 18px;
+}
+
+.list__description-title {
+    margin-bottom: 5px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+
     color: #FFFFFF;
 }
 
-.ourBenefits__block {
+.list__description-text {
+    margin-left: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+
+.ourBenefits {
     margin-top: 47px;
 }
 
-.ourBenefits__description {
-    margin-top: 28px;
+.oueBenefits__title {
+    margin-bottom: 28px;
+}
+
+.benefit__block {
+    width: 328px;
+    height: 144px;
+    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
+    border-radius: 13px;
+}
+
+.benefit__block-desc {
+    margin: 17px 0 0 31px;
+}
+
+.benefit__block-title {
     margin-bottom: 13px;
-}
-
-.discription__block {
-    margin-left: 31px;
-}
-
-.ourBenefits__d__title {
-    padding: 17px 0 0 0;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -280,129 +274,127 @@ margin-left: 30px;
     color: #FFFFFF;
 }
 
-.ourBenefits__list {
-    margin: 13px 0 0 31px;
-    padding-bottom: 17px;
+.benefit__block-item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #AA9EC0;
 }
 
-/* ---------------------секция 3---------------------------- */
-.studies__block {
-    margin-top: 72px;
-    height: 345px;
+
+.form {
+    margin: 23px 0 0 29px;
+    width: 328px;
+    height: 479px;
+    background: radial-gradient(88.62% 88.62% at 50% 50%, rgba(113, 74, 226, 0.53) 0%, rgba(69, 32, 176, 0.0583) 100%);
+    border: 1px solid #CD40FF;
+    border-radius: 13px;
 }
 
-.studis__item {
-    display: flex;
-    flex-direction: row;
-    margin: 38px 0 50px 0;
+.form_title {
+    margin-top: 36px;
 }
 
 .form__block {
-    margin-top: 44px;
-    height: 479px;
-}
-
-.form__inputs {
-    width: 266px;
-    margin: 0 auto;
-}
-
-.input {
-    margin-top: 24px;
+    margin-top: 37px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 24px;
+    justify-content: center;
 }
 
 .form__input {
-    width: 100%;
+    width: 266px;
     height: 52px;
     background: rgba(32, 9, 98, 0.54);
     border: 1px solid rgba(186, 67, 242, 0.67);
     border-radius: 13px;
 }
-.form__inputText {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #C4C4C4;
-}
-.form__link{
-    text-decoration: none;
-    color: rgba(52, 158, 255, 1);
-}
-.form__link:hover,
-.form__link:focus{
-    color: rgb(39, 114, 184);
-}
-.input__radio {
+
+.form__radioInput {
     display: flex;
     flex-direction: row;
 }
 
-#radio {
+.form__inputRadio {
     width: 26px;
     height: 26px;
     margin-right: 14px;
+}
+
+.form__input-text {
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(195, 195, 195, 1);
+}
+
+.form__input-link {
+    text-decoration: none;
+    color: rgba(52, 158, 255, 1);
+}
+
+.form__input-link:hover,
+.form__input-link:focus {
+    color: rgb(21, 99, 172);
 }
 
 .form__btn {
     margin-left: 40px;
 }
 
-
-/* подвал */
-footer {
+/* ----------------------подвал---------------------------- */
+.footer__block {
     margin-top: 100px;
-    background-color: rgba(11, 1, 28, 1);
-
+    height: 252px;
+    background-color: #0B011C;
 }
 
-.footer__welcomImg {
+.footer__grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding: 18px 0 0 20px;
+    gap: 20px;
+}
+
+.footer__img {
     width: 200px;
     height: 68px;
 }
 
-.footer__description {
-    padding: 18px 0 0 20px;
+.sosial {
     display: flex;
     flex-direction: row;
 }
 
-.footer__title {
-    color: #FFFFFF;
+.sosial__img {
+    width: 39px;
+    height: 39px;
+    margin-right: 20px;
 }
 
-.footer__text {
-    color: #937EB5;
-}
-
-.footer__link {
-    margin: 5px 0 0 19px;
+.sosial__link {
+    padding-top: 7px;
     text-decoration: none;
-    color: #937EB5;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-    color: #6b588a;
-}
-
-.ght {
-    display: flex;
-    justify-content: end;
-}
-
-.rights__text {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: rgba(91, 91, 91, 1);
-    margin: 0 18px 26px 0;
+    color: #937EB5;
 }
 
+.signed {
+    position: relative;
+}
 
+.footer__Signed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 26px;
+    justify-self: end;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5B5B5B;
+}
 /* --------------------------Адаптив--------------------------------------- */
 .desctop__menu {
     display: none;
@@ -466,668 +458,157 @@ footer {
     }
 
 
-    /* текст */
-    .title {
-        /* разобраться с этим отсупом 101, едет блок: мы помогаем */
-        margin: 64px 0 50px 0;
-        /* обратить внимание на отступ */
-        font-size: 24px;
-        line-height: 35px;
-    }
-
-    .weHelp__title {
-        margin-bottom: 25px;
-    }
-
-    .text {
-        /* font-size: 36px;
-            line-height: 42px; */
-        font-size: 17px;
-        line-height: 17px;
-    }
-
-    .forwhom__title {
-        font-size: 22px;
-        line-height: 24px;
-    }
-
-    .list__text {
-        /* не по макету */
-        margin-left: 50px;
-        color: white;
-    }
-
-    /* картинки */
-    .list__img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .fullscrean__logo {
-        display: block;
-        width: 200px;
-        height: 200px;
-    }
-
-    /* основной блок */
-    .block {
-        width: 500px;
-    }
-
-    /* приветственный блок */
-    .welcome__block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 68px;
-    }
-
-    .img__block {
-        /* охуенно огромная фотка выставить ей отступы
-             */
-        margin: 0 40px 0 300px;
-    }
-
-    /* блок мы помогаем */
-    .weHelp__block {
-        /* надо бдует поменять */
-        height: 180px;
-    }
-
-    /* блоки со списками */
-    .forwhom__block,
-    .studies__block {
-        height: 500px;
-    }
-
-    .list {
-        margin-left: 40px;
-    }
-
-    /* .forwhom__item {
-        margin-bottom: 50px;
-    } */
-    .forwhom__item,
-    .studis__item {
-        /* margin-left: 100px; */
-        margin-bottom: 60px;
-    }
-
-    /* наши преймущества */
-    .ourBenefits__description {
-        height: 150px;
-    }
-
-    .discription__block {
-        margin-left: 50px;
-    }
-
-    .ourBenefits__description1 {
-        height: 154px;
-    }
-
-
-    .ourBenefits__d__title {
-        font-size: 20px;
-        line-height: 27px;
-    }
-
-    /* настройка формы */
-
-    .form__block {
-        height: 600px;
-    }
-
-    .form__inputs {
-        width: 400px;
-        margin: 0 auto;
-    }
-
-    .input {
-        margin-bottom: 24px;
-    }
-
-    .form__input {
-        width: 100%;
-        height: 60px;
-        background: rgba(32, 9, 98, 0.54);
-        border: 1px solid rgba(186, 67, 242, 0.67);
-        border-radius: 13px;
-    }
-
-    .input__radio {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #radio {
-        width: 34px;
-        height: 34px;
-        margin-right: 32px;
-    }
-
-    .form__btn {
-        margin-left: 100px;
-    }
-
-    /* footer */
-    .footer__block {
-        height: 500px;
-    }
-
-
-    
-
-    .footer__description {
-        padding: 18px 0 44px 73px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer__welcomImg {
-        width: 300px;
-        height: 110px;
-    }
-
-    .footer__title {
-        color: #FFFFFF;
-    }
-
-    .footer__text {
-        color: #937EB5;
-    }
-
-    .footer__link {
-        margin: 5px 0 0 19px;
-        text-decoration: none;
-        color: #937EB5;
-    }
-
-    .footer__link:hover,
-    .footer__link:focus {
-        color: #6b588a;
-    }
-
-    .rights__text {
-        font-size: 20px;
-        line-height: 27px;
-        margin: 0 18px 26px 0;
-    }
-
-    .footer__img {
-        width: 60px;
-        height: 60px;
-    }
-
-    /* кнопки */
-    .contactUs_Btn {
-        width: 200px;
-        height: 60px;
-        padding: 15px 18px;
-        font-size: 17px;
-        line-height: 17px;
-    }
+   
 }
 
-@media(min-width:1200px) {
-    /* меню */
-    /* .desctop__menu {
-        width: 600px;
-    } */
 
-    .desctop__link {
-        padding: 10;
-        font-size: 14px;
-        line-height: 18px;
-
-    }
-
-    .desctop__items {
-        margin-right: 18px;
-    }
-
-
-    /* текст */
-    .title {
-        /* разобраться с этим отсупом 101, едет блок: мы помогаем */
-        margin: 64px 0 80px 0;
-        /* обратить внимание на отступ */
-        font-size: 64px;
-        line-height: 75px;
-    }
-
-    .weHelp__title {
-        margin-bottom: 25px;
-    }
-
-    .text {
-        /* font-size: 36px;
-    line-height: 42px; */
-        font-size: 40px;
-        line-height: 47px;
-    }
-
-    .forwhom__title {
-        font-size: 48px;
-        line-height: 58px;
-    }
-
-    .list__text {
-        /* не по макету */
-        margin-left: 100px;
-        color: white;
-    }
-
-    /* картинки */
-    .welcom__img {
-        width: 518px;
-        height: 94px;
-    }
-
-    .list__img {
-        width: 99px;
-        height: 103px;
-    }
-
-
-    .fullscrean__logo {
-        width: 423px;
-        height: 423px;
-    }
-
-    /* основной блок */
-    .block {
-        width: 954px;
-    }
-
-
-    /* приветственный блок */
-    .welcome__block {
-        margin-top: 68px;
-    }
-
-
-    .img__block {
-        margin: 0 90px 0 100px;
-    }
-
-
-    /* блок мы помогаем */
-    .weHelp__block {
-        height: 352px;
-    }
-
-
-    /* блоки со списками */
-    .forwhom__block,
-    .studies__block {
-        height: 1003px;
-    }
-
-
-    .list {
-        margin-left: 87px;
-    }
-
-
-    /* .forwhom__item {
-        margin-bottom: 50px;
-    } */
-    .forwhom__item,
-    .studis__item {
-        /* margin-left: 100px; */
-        margin-bottom: 162px;
-    }
-
-    /* наши преймущества */
-    .ourBenefits__description {
-        height: 386px;
-    }
-
-
-    .discription__block {
-        margin-left: 106px;
-    }
-
-
-    .ourBenefits__description1 {
-        height: 454px;
-    }
-
-
-
-    .ourBenefits__d__title {
-        font-size: 40px;
-        line-height: 47px;
-    }
-
-
-    /* настройка формы */
-
-    .form__block {
-        height: 1331px;
-    }
-
-    .form__inputs {
-        width: 757px;
-        margin: 0 auto;
-    }
-
-
-    .input {
-        margin-bottom: 68px;
-        margin-left: 60px;
-    }
-
-
-    .form__input {
-        width: 600px;
-        height: 100px;
-        background: rgba(32, 9, 98, 0.54);
-        border: 1px solid rgba(186, 67, 242, 0.67);
-        border-radius: 13px;
-    }
-
-    .input__radio {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #radio {
-        width: 74px;
-        height: 74px;
-        margin-right: 32px;
-    }
-
-    .form__btn {
-        margin-left: 150px;
-    }
-
-
-    /* footer */
-    .footer__block {
-        height: 717px;
-    }
-
-    footer {
-        margin-top: 100px;
-        background-color: rgba(11, 1, 28, 1);
-
-    }
-
-    .footer__description {
-        padding: 18px 0 44px 73px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer__welcomImg {
-        width: 738px;
-        height: 250px;
-    }
-
-    .footer__title {
-        color: #FFFFFF;
-    }
-
-    .footer__text {
-        color: #937EB5;
-    }
-
-    .footer__link {
-        margin: 5px 0 0 19px;
-        text-decoration: none;
-        color: #937EB5;
-    }
-
-    .footer__link:hover,
-    .footer__link:focus {
-        color: #6b588a;
-    }
-
-    .ght {
-        display: flex;
-        justify-content: end;
-    }
-
-    .rights__text {
-        font-size: 40px;
-        line-height: 47px;
-        margin: 0 18px 26px 0;
-    }
-
-    .footer__img {
-        width: 106px;
-        height: 106px;
-    }
-
-    .contactUs_Btn {
-        width: 392px;
-        height: 109px;
-        padding: 33px 30px;
-        font-size: 36px;
-        line-height: 42px;
-    }
-
-    .contactUs_Btn {
-        width: 392px;
-        height: 109px;
-        padding: 33px 30px;
-        font-size: 36px;
-        line-height: 42px;
-    }
-}
 
 @media(min-width:1438px) {
 
-    /* текст */
+    /* общие */
     .title {
-        /* разобраться с этим отсупом 101, едет блок: мы помогаем */
-        margin: 64px 0 101px 0;
-        /* обратить внимание на отступ */
-        font-size: 64px;
-        line-height: 75px;
-    }
-
-    .weHelp__title {
-        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 47px;
     }
 
     .text {
-        /* font-size: 36px;
-        line-height: 42px; */
         font-size: 32px;
         line-height: 38px;
     }
 
-    .forwhom__title {
-        font-size: 48px;
-        line-height: 58px;
-    }
+    /* меню */
 
-    .list__text {
-        /* не по макету */
-        margin-left: 100px;
-        color: white;
-    }
+    /* приветственный блок */
 
-    /* настрройки блоков */
-    .block {
-        width: 954px;
-    }
-
-    .welcome__block {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 168px;
-    }
-
-    .demonstration__block {
-        margin-top: 139px;
-    }
-
-    .list {
-        margin-left: 87px;
-    }
-
-    .ourBenefits__d__title {
-        font-size: 40px;
-        line-height: 47px;
-    }
-
+    /* мы помогаем */
     .weHelp__block {
-        height: 352px;
+        width: 727px;
+        height: 223px;
     }
 
-    .ourBenefits__block {
-        margin-top: 154px;
-    }
-
-    .forwhom__block,
-    .studies__block {
-        margin-top: 122px;
-        height: 1003px;
-    }
-
-    .discription__block {
-        margin-left: 106px;
-    }
-
-    .ourBenefits__description {
-        height: 386px;
-        margin-bottom: 35px;
-    }
-
-    .ourBenefits__description1 {
-        height: 454px;
-    }
-
-    .form__block {
-        height: 1100px;
-        margin-top: 173px;
-    }
-
-    .footer__block {
-        height: 717px;
-    }
-
-    /* настройки отступов */
-    .forwhom__item {
-        margin-bottom: 126px;
-    }
-
-
-    .studis__item {
-        /* margin-left: 100px; */
-        margin-bottom: 171px;
-    }
-
-
-    /* картинки */
-    .list__img {
-        width: 99px;
-        height: 103px;
-    }
-
-    .img__block {
-        margin: 0 145px 0 200px;
-    }
-
-    /* кнопки */
-    .contactUs_Btn {
-        width: 392px;
-        height: 109px;
-        padding: 33px 30px;
+    .weHelp__title {
         font-size: 36px;
         line-height: 42px;
     }
 
-    /* настройка формы */
-
-    .form__inputs {
-        width: 757px;
-        margin: 0 auto;
+    .weHelp__text {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
     }
 
-    .input {
-        margin-bottom: 68px;
-        margin-left: 70px;
+    /* блок с видео */
+    .video__example {
+        height: 645px;
     }
 
-    .form__input {
-        width: 600px;
-        height: 100px;
-        background: rgba(32, 9, 98, 0.54);
-        border: 1px solid rgba(186, 67, 242, 0.67);
-        border-radius: 13px;
+    /* списки */
+    .block-grid {
+        justify-content: center;
+        grid-template-columns: repeat(2, 647px);
+        gap: 36px;
     }
 
-    .input__radio {
-        display: flex;
-        flex-direction: row;
+    .forwhom__block {
+        width: 647px;
+        height: 846px;
     }
 
-    #radio {
-        width: 74px;
-        height: 74px;
-        margin-right: 32px;
+    .form__title {
+        /* перенести в начальную верску */
+        margin: 56px 0 81px 0;
+        text-align: center;
+        font-size: 48px;
+        line-height: 56px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+
+        color: #FFFFFF;
+
     }
 
-    .form__btn {
-        margin-left:180px;
+    .list {
+        margin-left: 60px;
     }
 
-    /* footer */
-    footer {
-        margin-top: 100px;
-        background-color: rgba(11, 1, 28, 1);
+    .form__item {
+        margin-bottom: 112px;
+    }
 
+    .list__img {
+        width: 73px;
+        height: 77px;
+    }
+
+    .forwhom__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    /* наши преймущества */
+    .ourBenefits__description {
+        width: 647px;
+        height: 414px;
+    }
+
+    .discription__block {
+        margin: 49px 0 0 60px;
+    }
+
+    .ourBenefits__d__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .ourBenefits__list {
+        margin-top: 35px;
+    }
+
+    .ourBenefits__item {
+        margin-bottom: 10px;
+    }
+
+    /* форма */
+    .form__block {
+        width: 934px;
+        height: 1100px;
+    }
+
+    /* подвал */
+    .footer {
+        height: 739px;
+    }
+
+    .footer__block {
+        margin-left: 76px;
+        padding-top: 111px;
+        /* проверить это после перенеатройки */
     }
 
     .footer__description {
-        padding: 18px 0 44px 73px;
-        display: flex;
-        flex-direction: row;
+        margin-bottom: 40px;
     }
 
     .footer__welcomImg {
-        width: 738px;
-        height: 250px;
-    }
-
-    .footer__title {
-        color: #FFFFFF;
-    }
-
-    .footer__text {
-        color: #937EB5;
-    }
-
-    .footer__link {
-        margin: 5px 0 0 19px;
-        text-decoration: none;
-        color: #937EB5;
-    }
-
-    .footer__link:hover,
-    .footer__link:focus {
-        color: #6b588a;
-    }
-
-    .ght {
-        display: flex;
-        justify-content: end;
-    }
-
-    .rights__text {
-        font-size: 40px;
-        line-height: 47px;
-        margin: 0 18px 26px 0;
+        width: 618px;
+        height: 209px;
     }
 
     .footer__img {
         width: 106px;
         height: 106px;
+    }
+
+    .footer__link {
+        margin: 35px 0 0 54px;
+    }
+
+    .rights__text {
+        font-size: 40px;
+        line-height: 47px;
     }
 }

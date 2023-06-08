@@ -1,6 +1,6 @@
 'use strict'
 const header = document.querySelector('.headerMenu');
-const firstBlock = document.querySelector('.welcome__block');
+const firstBlock = document.querySelector('.welcom__block');
 const firstBlockHeight = firstBlock.scrollHeight;
 
 let scrollStarted = 0;
