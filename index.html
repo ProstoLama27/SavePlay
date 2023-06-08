@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/videoPlay.js"></script>
     <script defer src="js/burgerMenu.js"></script>
+    <script defer src="js/formSend.js"></script>
     
     
 </head>
@@ -27,8 +28,9 @@
     <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2secondPosition">
     <img src="img/Ellipse2.png" alt="элипс" class="elips2 elips2therdPosition">
     <img src="img/Ellipse3.png" alt="элипс" class="elips3 elips3secondPosition">
-    <header class="headerMenu">
-        <img src="img/logo.png" alt="логотип">
+    <div class="overlay"></div>
+    <header id="header" class="headerMenu">
+        <a href="#main"><img src="img/logo.png" alt="логотип"></a>
         <button type="button" class="bergerMenuBtn"><img src="img/burger.png" alt="бургер меню"></button>
         <nav class="burgerNav">
             <a href="#main" class="burgernav__link bergernav__FirstLink">Главная</a>
@@ -147,13 +149,13 @@
             <h2 class="title form_t">Оставить заявку</h2>
             <form action="#" class="form__inputs">
                 <div class="input">
-                    <input id="fio" type="text" value="  ФИО" class="form__input form__inputText">
+                    <input id="fio" type="text" placeholder="ФИО" class="form__input form__inputText">
                 </div>
                 <div class="input">
-                    <input id="tel" type="tel" value="  +7" class="form__input form__inputText">
+                    <input id="tel" type="tel" placeholder="+7..." class="form__input form__inputText">
                 </div>
                 <div class="input">
-                    <input type="text" value="  Какую компанию вы представляете" class="form__input form__inputText">
+                    <input type="text" placeholder="Какую компанию вы представляете" class="form__input form__inputText">
                 </div>
                 <div class="input input__radio">
                     <input id="radio" type="radio">
@@ -182,6 +184,7 @@
             </div>
         </div>
     </footer>
+    
 </body>
 
 </html>

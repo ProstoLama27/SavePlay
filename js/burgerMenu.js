@@ -1,9 +1,11 @@
 const burgerBtn = document.querySelector('.bergerMenuBtn');
 const burgerMenu = document.querySelector('.burgerNav');
 const burgerLinks = document.querySelectorAll('.burgernav__link');
+const overlay = document.querySelector('.overlay');
 
 burgerBtn.addEventListener('click', ()=>{
     burgerMenu.classList.toggle('burgerNav--visible');
+    overlay.classList.toggle('active');
 });
 
 const btn = document.getElementById('contactBtn')
