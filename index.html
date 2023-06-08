@@ -10,12 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="img/favicon.png">
-    <!-- подключить Inter -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@300&family=Raleway:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&family=Raleway:wght@200;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="js/videoPlay.js"></script> -->
+    <script defer src="js/videoPlay.js"></script>
     <script defer src="js/burgerMenu.js"></script>
     <script defer src="js/formSend.js"></script>
     
@@ -45,14 +44,19 @@
         </nav>
     </header>
    <section>
-    <div class="welcom__block">
-        <img src="img/title.svg" alt="СейвПлей" class="welcom__block-img">
+    <div class="welcom__block" id="main">
+        <div>
+            <img src="img/title.svg" alt="СейвПлей" class="welcom__block-img">
         <p class="welcom__block-text">
             Внедряемый функционал для</br> видеоплеера, который адаптирует</br> видео для людей с эпилепсией и</br> дальтонизмом
         </p>
-        <button class="contactUs__btn">Связаться с нами</button>
+        <a href="#contacts"  class="contactUs__btn">Связаться с нами</a>
+        </div>
+        <div>
+            <img src="img/logo_max.svg" alt="логотип" class="fullscrean__logo">
+        </div>
     </div>
-    <div class="mobile__block weHelp__block">
+    <div class="mobile__block weHelp__block" id="forWhom">
         <h2 class="title weHelp__block-title"> Мы помогаем</h2>
         <p class="text weHelp__block-text">
             людям с эпилепсией и дальтонизмом комфортно просматривать видео и фильмы
@@ -60,7 +64,7 @@
     </div>
     <div class="demonstration__block">
         <h2 class="title">Демонстрация</h2>
-        <video src="video/video1.mp4" class="video"></video>
+        <video src="video/video1.mp4" class="video" autoplay loop muted></video>
     </div>
    </section>
    <section>
@@ -92,7 +96,7 @@
             </ul>
         </div>
         <div class="list__block">
-            <h2 class="title list__block-title">Исследования</h2>
+            <h2 class="title list__block-title" id="studies">Исследования</h2>
             <ul class="list__block-list">
                 <li class="list__block-item">
                     <img src="img/list_img.svg" alt="фавикон" class="list__img">
@@ -136,9 +140,9 @@
             </div>
         </div>
     </div>
-    <div class="form">
+    <div class="form" id="form">
         <h2 class="title form_title">Оставить заявку</h2>
-        <form action="" class="form__block">
+        <form action="#" class="form__block">
             <div>
                 <input type="text" placeholder="ФИО" class="form__input">
             </div>
@@ -156,12 +160,12 @@
                 </div>
             </div>
             <div>
-                <button class="contactUs__btn form__btn">Связаться с нами</button>
+                <a href="#"  class="contactUs__btn form__btn">Связаться с нами</a>
             </div>
         </form>
     </div>
    </section>
-   <footer class="footer__block">
+   <footer class="footer__block" id="contacts">
     <div class="footer__grid">
         <div>
             <img src="img/footer_img.svg" alt="" class="footer__img">
