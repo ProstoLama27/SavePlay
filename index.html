@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/videoPlay.js"></script>
     <script defer src="js/burgerMenu.js"></script>
-    <script defer src="js/formSend.js"></script>
+    <script defer src="js/menuFix.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
     
     
 </head>
@@ -142,17 +146,19 @@
     </div>
     <div class="form" id="form">
         <h2 class="title form_title">Оставить заявку</h2>
-        <form action="#" class="form__block">
-            <div>
-                <input type="text" placeholder="ФИО" class="form__input">
+        <form action="sender.php" method="post" class="form__block">
+            <div class="input">
+                <input type="text" class="name form__input" name="name" placeholder="ФИО" required>
             </div>
-            <div>
-                <input type="tel" placeholder="+7..." class="form__input">
+            <div class="input">
+                <input type="text" class="phone form__input" name="phone" placeholder="Телефон">
+                
             </div>
-            <div>
-                <input type="text" placeholder="какую компанию вы представляете" class="form__input">
+            <div class="input">
+                <input type="text" name="surname" class="form__input" placeholder="Какую компанию вы представляете" required>
+                <input type="email" name="email" class="inviz" value="yegor_manushin@mail.ru">
             </div>
-            <div>
+            <div class="input">
                 <div class="form__radioInput">
                     <input type="radio" class="form__inputRadio">
                     <p class="form__input-text">Я согласен с <a href="#" class="form__input-link">правилами</br>
@@ -160,7 +166,7 @@
                 </div>
             </div>
             <div>
-                <a href="#"  class="contactUs__btn form__btn">Связаться с нами</a>
+                <button type="button" class="send-form contactUs__btn">Отправить форму</button>
             </div>
         </form>
     </div>
