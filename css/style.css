@@ -7,6 +7,9 @@ body {
     background-color: #150226;
     font-family: 'Raleway', sans-serif;
 }
+.body--noscroll {
+    overflow: hidden;
+  }
 
 .title {
     text-align: center;
@@ -111,6 +114,7 @@ body {
 }
 
 .burgernav__link {
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
@@ -333,6 +337,7 @@ border-radius: 13px;
 }
 
 .form__input-link {
+    cursor: pointer;
     text-decoration: none;
     color: rgba(52, 158, 255, 1);
 }
@@ -377,6 +382,7 @@ border-radius: 13px;
 }
 
 .sosial__link {
+    cursor: pointer;
     padding-top: 7px;
     text-decoration: none;
     font-size: 16px;
@@ -421,6 +427,7 @@ border-radius: 13px;
 }
 
 .desctop__link {
+    cursor: pointer;
     padding: 16px;
     text-decoration: none;
     font-family: 'Raleway';
