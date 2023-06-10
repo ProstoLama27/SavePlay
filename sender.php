@@ -41,7 +41,8 @@ try {
     $mail->Body    = $msg;
 
     $mail->send();
-    echo "<p>Привет, форма отправлена</p>";
+    // echo "<p>Привет, форма отправлена</p>";
+    header("Location: ".$_SERVER['PHP_SELF']);
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

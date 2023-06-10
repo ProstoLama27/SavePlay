@@ -83,8 +83,8 @@ body {
     position: absolute;
     width: 220px;
     height: 380px;
-    display: flex;
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
     right: 0;
     margin-top: 65px;
     background-color: #5C3D90;
@@ -112,6 +112,8 @@ body {
 }
 
 .burgerNav--visible {
+    display: flex;
+    flex-direction: column;
     opacity: 1;
     z-index: 2;
 }
@@ -356,6 +358,14 @@ border-radius: 13px;
 
 .send-form  {
     margin-left: 40px;
+}
+.form__input::placeholder{
+    padding: 10px;
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #C4C4C4;
 }
 
 /* ----------------------подвал---------------------------- */
