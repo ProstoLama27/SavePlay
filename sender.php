@@ -11,17 +11,17 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$text = $_POST['text'];
+// $text = $_POST['text'];
 
 $to = "save.play.team@gmail.com";
 $subject = "Заявка с сайта";
 
 $msg = "
 Имя: $name
-Фамилия: $surname
+
 Телефон: $phone
-// Почта: $email
-Текст: $text";
+ Почта: $email
+ Текст: $surname";
 
 $mail = new PHPMailer(true);
 
@@ -41,10 +41,12 @@ try {
     $mail->Body    = $msg;
 
     $mail->send();
-    // echo "<p>Привет, форма отправлена</p>";
+    echo "<p>Привет, форма отправлена</p>";
+    echo "<script>alert('Форма отправлена');</script>";
     header("Location: ".$_SERVER['PHP_SELF']);
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "<script>alert('Форма отправлена');</script>";
+    header("Location: ".$_SERVER['PHP_SELF']);
 }
 ?>
-

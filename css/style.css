@@ -2,21 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
 /* общие */
 body {
     background-color: #150226;
     font-family: 'Raleway', sans-serif;
 }
-.inviz{
+
+.inviz {
     display: none;
 }
-.input{
+
+.input {
     display: flex;
     flex-direction: column;
 }
+
 .body--noscroll {
     overflow: hidden;
-  }
+}
 
 .title {
     text-align: center;
@@ -65,7 +69,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 .bergerMenuBtn {
@@ -98,7 +102,7 @@ body {
     left: 0;
     width: 100%;
     height: 2800px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(2px);
     z-index: 1;
     opacity: 0;
     pointer-events: none;
@@ -167,18 +171,18 @@ body {
 .contactUs__btn {
     text-decoration: none;
     font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
 
-padding: 15px 18px;
-background: linear-gradient(263.57deg, #761EB4 0%, #3F17A6 100%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 13px;
+    padding: 15px 18px;
+    background: linear-gradient(263.57deg, #761EB4 0%, #3F17A6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
 }
 
-.contactUs__btn:hover{
+.contactUs__btn:hover {
     background: linear-gradient(263.57deg, #A92FFF 0%, #743EFF 100%);
 }
 
@@ -325,6 +329,12 @@ border-radius: 13px;
     background: rgba(32, 9, 98, 0.54);
     border: 1px solid rgba(186, 67, 242, 0.67);
     border-radius: 13px;
+    /* padding: 5px; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
 }
 
 .form__radioInput {
@@ -356,16 +366,17 @@ border-radius: 13px;
     color: rgb(21, 99, 172);
 }
 
-.send-form  {
+.send-form {
     margin-left: 40px;
 }
-.form__input::placeholder{
+
+.form__input::placeholder {
     padding: 10px;
     font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-color: #C4C4C4;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
 }
 
 /* ----------------------подвал---------------------------- */
@@ -406,8 +417,9 @@ color: #C4C4C4;
     line-height: 19px;
     color: #aa97ca;
 }
+
 .sosial__link:hover,
-.sosial__link:focus{
+.sosial__link:focus {
     color: #906ace;
 }
 
@@ -425,6 +437,7 @@ color: #C4C4C4;
     line-height: 19px;
     color: #5B5B5B;
 }
+
 /* --------------------------Адаптив--------------------------------------- */
 .desctop__menu {
     display: none;
@@ -448,7 +461,7 @@ color: #C4C4C4;
     padding: 16px;
     text-decoration: none;
     font-family: 'Raleway';
-    font-style: bold;
+    /* font-style: bold; */
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
@@ -468,10 +481,11 @@ color: #C4C4C4;
 
 @media(min-width:768px) {
     .overlay {
-       
+
         height: 0;
-       
+
     }
+
     .bergerMenuBtn {
         display: none;
     }
@@ -483,7 +497,7 @@ color: #C4C4C4;
     }
 
     .desctop__link {
-        padding: 10;
+        padding: 10px;
         font-size: 14px;
         line-height: 18px;
 
@@ -496,7 +510,7 @@ color: #C4C4C4;
     .fullscrean__logo {
         display: block;
     }
-    
+
     .fullscrean__logo {
         width: 200px;
         height: 200px;
@@ -504,12 +518,14 @@ color: #C4C4C4;
         right: 0;
         margin-right: 100px;
     }
+
     /* списки */
     .grid__block {
         grid-template-columns: repeat(2, 328px);
         gap: 36px;
     }
-    .video{
+
+    .video {
         height: 250px;
     }
 }
@@ -603,7 +619,7 @@ color: #C4C4C4;
         line-height: 48px;
     }
 
-    
+
     /* преймущества */
     .ourBenefits {
         margin: 166px 0 102px 0;
@@ -646,6 +662,8 @@ color: #C4C4C4;
     .form__input {
         width: 753px;
         height: 117px;
+        font-size: 32px;
+        line-height: 38px;
     }
 
     .form__inputRadio {
@@ -654,7 +672,7 @@ color: #C4C4C4;
         margin-right: 33px;
     }
 
-    .send-form  {
+    .send-form {
         margin-left: 200px;
     }
 
